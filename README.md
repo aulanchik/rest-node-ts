@@ -41,6 +41,8 @@ src/
 -   [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
 -   [pnpm](https://pnpm.io/installation) package manager
 
+_Note: `pnpm` commands can be replaced by `npm` and `yarn`._
+
 ### Installation
 
 1.  **Clone the repository:**
