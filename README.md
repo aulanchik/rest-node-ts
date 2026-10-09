@@ -5,16 +5,16 @@ This repository provides a solid foundation with a structured project layout, es
 
 ## Features
 
--   **TypeScript**: Fully configured TypeScript setup for type safety and modern JavaScript features.
--   **Structured Layout**: Organized directory structure for controllers, routes, middleware, and utilities.
--   **Environment Variables**: Uses `dotenv` for managing environment-specific configurations.
--   **Development Ready**: Includes `ts-node-dev` for automatic server restarts on file changes.
--   **Path Aliasing**: Pre-configured with `tsconfig-paths` for cleaner import statements (`@/` maps to `src/`).
--   **Custom Logger**: A simple, colorful console logger for different message types (info, success, warn, error).
--   **Essential Middleware**:
-    -   `cors`: For enabling Cross-Origin Resource Sharing.
-    -   `morgan`: For HTTP request logging.
-    -   `helmet`: To help secure your Express apps by setting various HTTP headers.
+- **TypeScript**: Fully configured TypeScript setup for type safety and modern JavaScript features.
+- **Structured Layout**: Organized directory structure for controllers, routes, middleware, and utilities.
+- **Environment Variables**: Uses `dotenv` for managing environment-specific configurations.
+- **Development Ready**: Includes `ts-node-dev` for automatic server restarts on file changes.
+- **Path Aliasing**: Pre-configured with `tsconfig-paths` for cleaner import statements (`@/` maps to `src/`).
+- **Custom Logger**: A simple, colorful console logger for different message types (info, success, warn, error).
+- **Essential Middleware**:
+  - `cors`: For enabling Cross-Origin Resource Sharing.
+  - `morgan`: For HTTP request logging.
+  - `helmet`: To help secure your Express apps by setting various HTTP headers.
 
 ## Project Structure
 
@@ -38,20 +38,22 @@ src/
 
 ### Prerequisites
 
--   [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
--   [pnpm](https://pnpm.io/installation) package manager
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- [pnpm](https://pnpm.io/installation) package manager
 
 _Note: `pnpm` commands can be replaced by `npm` and `yarn`._
 
 ### Installation
 
 1.  **Clone the repository:**
+
     ```bash
     git clone https://github.com/aulanchik/rest-node-ts.git
     cd rest-node-ts
     ```
 
 2.  **Install dependencies:**
+
     ```bash
     pnpm install
     ```
@@ -99,11 +101,11 @@ pnpm start
 
 This template includes a sample endpoint to demonstrate the structure.
 
--   **`GET /`**
-    -   **Description**: Returns a simple JSON message.
-    -   **Response**:
-        ```json
-        {
-            "message": "This is a sample endpoint."
-        }
-        ```
+- **`GET /`**
+  - **Description**: Returns a simple JSON message.
+  - **Response**:
+    ```json
+    {
+      "message": "This is a sample endpoint."
+    }
+    ```
