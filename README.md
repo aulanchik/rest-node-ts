@@ -8,8 +8,8 @@ This repository provides a solid foundation with a structured project layout, es
 - **TypeScript**: Fully configured TypeScript setup for type safety and modern JavaScript features.
 - **Structured Layout**: Organized directory structure for controllers, routes, middleware, and utilities.
 - **Environment Variables**: Uses `dotenv` for managing environment-specific configurations.
-- **Development Ready**: Includes `ts-node-dev` for automatic server restarts on file changes.
-- **Path Aliasing**: Pre-configured with `tsconfig-paths` for cleaner import statements (`@/` maps to `src/`).
+- **Development Ready**: Uses [`tsx`](https://tsx.is/) (`tsx watch`) for fast startup and automatic server restarts on file changes.
+- **Path Aliasing**: Cleaner import statements (`@/` maps to `src/`), resolved natively by `tsx` from `tsconfig.json` during development.
 - **Custom Logger**: A simple, colorful console logger for different message types (info, success, warn, error).
 - **Essential Middleware**:
   - `cors`: For enabling Cross-Origin Resource Sharing.
@@ -38,7 +38,7 @@ src/
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- [Node.js](https://nodejs.org/) (v20.0.0 or higher recommended)
 - [pnpm](https://pnpm.io/installation) package manager
 
 _Note: `pnpm` commands can be replaced by `npm` and `yarn`._
@@ -73,13 +73,15 @@ _Note: `pnpm` commands can be replaced by `npm` and `yarn`._
 
 ### Run in Development Mode
 
-To start the server with hot-reloading enabled, run:
+To start the server with automatic restarts on file changes, run:
 
 ```bash
 pnpm dev
 ```
 
-The server will be accessible at `http://localhost:<PORT>`.
+This runs `tsx watch src/server.ts`. The server will be accessible at `http://localhost:<PORT>`.
+
+_Note: `tsx` does not type-check your code. To check types, run `npx tsc --noEmit`._
 
 ### Build for Production
 
